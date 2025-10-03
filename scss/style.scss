@@ -129,6 +129,9 @@ h1 {
 // Navigation
 // ============================================
 nav {
+    will-change: transform;
+    transform: translateZ(0);
+  
     padding: 32px 24px !important;
     box-shadow: 0 3px 12px $shadow-color-nav !important;
 
@@ -691,6 +694,7 @@ nav {
 // ============================================
 .footer {
     border-top: 1px solid $border-dark-gray;
+    overflow: hidden;
 
     .container {
         max-width: $container-max-width;
