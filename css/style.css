@@ -275,6 +275,8 @@ h1 {
 }
 
 nav {
+  will-change: transform;
+  transform: translateZ(0);
   padding: 32px 24px !important;
   box-shadow: 0 3px 12px rgba(18, 18, 18, 0.0588235294) !important;
 }
@@ -801,6 +803,7 @@ nav .right-buttons .btn.register:hover {
 
 .footer {
   border-top: 1px solid #cacaca;
+  overflow: hidden;
 }
 .footer .container {
   max-width: 1270px;
