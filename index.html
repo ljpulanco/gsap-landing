@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Deliver X - Webflow Ecommerce website template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+    <!-- navigation menu -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <div class="container">
+    <a href="/home" class="navbar-brand">
+      <img src="assets/logo.svg" alt="Logo" class="header-logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false">
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-end">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+            <i class="fa fa-chevron-down small"></i>
+          </a>
+          <ul class="dropdown-menu shadow rounded">
+            <div class="row">
+              <div class="col">
+                <h6 class="text-uppercase text-secondary text-dark">Menu</h6>
+                <div class="row menu">
+                  <div class="item">
+                    <a class="dropdown-item p-0" href="#">Home</a>
+                    <a class="dropdown-item p-0" href="#">About</a>
+                    <a class="dropdown-item p-0" href="#">Contact</a>
+                    <a class="dropdown-item p-0" href="#">Blog</a>
+                    <a class="dropdown-item p-0" href="#">Blog posts</a>
+                  </div>
+                  <div class="item">
+                    <a class="dropdown-item p-0" href="#">Plans</a>
+                    <a class="dropdown-item p-0" href="#">Plan single</a>
+                    <a class="dropdown-item p-0" href="#">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h6 class="text-uppercase text-secondary text-dark">Utility pages</h6>
+                <a class="dropdown-item p-0" href="#">Start here</a>
+                <a class="dropdown-item p-0" href="#">Styleguide</a>
+                <a class="dropdown-item p-0" href="#">Password protected</a>
+                <a class="dropdown-item p-0" href="#">404 Not found</a>
+                <a class="dropdown-item p-0" href="#">Licenses</a>
+                <a class="dropdown-item p-0" href="#">Changelog</a>
+                <a class="dropdown-item p-0 text-special" href="#">Browse More Templates</a>
+              </div>
+            </div>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="d-flex align-items-center right-buttons">
+      <a class="btn cart" href="#" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar" aria-controls="cartSidebar">Cart(0)</a>
+      <a class="btn download" href="#">Download app</a>
+      <a class="btn register" href="#">Register</a>
+    </div>
+  </div>
+</nav>
+
+<!-- COLLAPSIBLE HEADER MENU -->
+<div class="collapse fullscreen-menu" id="mobileMenu">
+  <div class="d-flex  vh-100 bg-white dropdown-mobile-menu">
+    <ul class="navbar-nav w-100">
+      <li class="nav-item"><a class="nav-link p-0" href="#">Home</a></li>
+      <li class="nav-item active"><a class="nav-link p-0" href="#">About</a></li>
+      <li class="nav-item"><a class="nav-link p-0" href="#">Pricing</a></li>
+      <li class="nav-item">
+        <a class="nav-link p-0" data-bs-toggle="collapse" href="#mobilePagesMenu" role="button" aria-expanded="false">
+          Pages <i class="fa fa-chevron-down small"></i>
+        </a>
+        <div class="collapse" id="mobilePagesMenu">
+          <div class="card card-body border-0">
+           <div class="row">
+              <div class="col">
+                <h6>Menu</h6>
+                <div class="row menu">
+                  <div class="item">
+                    <a class="dropdown-item p-0" href="#">Home</a>
+                    <a class="dropdown-item p-0" href="#">About</a>
+                    <a class="dropdown-item p-0" href="#">Contact</a>
+                    <a class="dropdown-item p-0" href="#">Blog</a>
+                    <a class="dropdown-item p-0" href="#">Blog posts</a>
+                  </div>
+                  <div class="item">
+                    <a class="dropdown-item p-0" href="#">Plans</a>
+                    <a class="dropdown-item p-0" href="#">Plan single</a>
+                    <a class="dropdown-item p-0" href="#">Register</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h6 >Utility pages</h6>
+                <a class="dropdown-item p-0" href="#">Start here</a>
+                <a class="dropdown-item p-0" href="#">Styleguide</a>
+                <a class="dropdown-item p-0" href="#">Password protected</a>
+                <a class="dropdown-item p-0" href="#">404 Not found</a>
+                <a class="dropdown-item p-0" href="#">Licenses</a>
+                <a class="dropdown-item p-0" href="#">Changelog</a>
+                <a class="dropdown-item p-0 text-special" href="#">Browse More Templates</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <a class="btn-get-started" href="#">Get Started</a>
+  </div>
+</div>
+
+<!-- section hero -->
+<section class="hero-section" id="home" >
+  <div class="container">
+    <div class="row layout">
+        <div class="col">
+            <div class="title-heading">About Deliver X</div>
+            <h1>We are here to help amazing restaurants get great customers</h1>
+            <p class="sub-heading">At morbi adipiscing sit sed consectetur senectus Dignissim sed amet tincidunt vitae ultricies ultrices amet fermentum amet neque et id sed lacinia massa pretium aliquam libero et.</p>
+        </div>
+
+        <div class="col images">
+            <div class="hero-image">
+                <img class="hero" src="assets/hero-image.png" alt="">
+                    <div class="hero-card image-wrapper">
+                        <img src="assets/hero-image-card.png" alt="">
+                    </div>
+
+                    <div class="hero-delivery image-wrapper">
+                        <img src="assets/delivery.svg" alt="">
+                    </div>
+            </div>
+
+            
+        </div>
+    
+    </div>
+
+
+    <div class="row stats">
+        <div class="col">
+            <h4 class="text-center">100<span>+</span></h4>
+            <p class="text-center">Happy customers</p>
+        </div>
+        <div class="col">
+            <h4 class="text-center">500k<span>+</span></h4>
+            <p class="text-center">Restaurants available</p>
+        </div>
+        <div class="col">
+            <h4 class="text-center">30M<span>+</span></h4>
+            <p class="text-center">Successful deliveries</p>
+        </div>
+        <div class="col">
+            <h4 class="text-center">99.9<span>%</span></h4>
+            <p class="text-center">Customer satisfaction</p>
+        </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="about-section" id="about">
+  <div class="container">
+    <div class="row started">
+        <div class="col col-6">
+            <div class="img-content"><img class="img-company-started img-fluid" src="assets/image-2-stoy-about-delivery-template.jpg" alt=""></div>
+        </div>
+        <div class="col col-6">
+            <div class="content">
+                <span class="d-block">ABOUT US</span>
+                <h2>Our company started back in 2016</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mission">
+        <div class="col col-6">
+            <div class="content">
+                <span class="d-block">OUR MISSION</span>
+                <h2>Our mission is to disrupt the food industry</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+            </div>
+        </div>
+        <div class="col col-6">
+            <div class="img-content">
+                <img class="img-company-mission img-fluid" src="assets/image-1-stoy-about-delivery-template.jpg" alt="">
+            </div>
+            
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="inner-container sticky-top">
+                    <div class="content">
+                        <span class="d-block">OUR JOURNEY</span>
+                        <h2>It has been a long but incredible journey</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque ut quis.</p>
+                        <a href="" class="btn">Download app</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="inner-container timeline">
+                    <div class="card">
+                        <span>2016</span>
+                        <h3>Deliver X was founded</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                    </div>
+
+                    <div class="card">
+                        <span>2018</span>
+                        <h3>Raised Series A at $50M valuation</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                    </div>
+
+                    <div class="card">
+                        <span>2019</span>
+                        <h3>Raised Series B at $600M valuation</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                    </div>
+
+                    <div class="card">
+                        <span>2022</span>
+                        <h3>Raised Series C at $3B valuation</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="partner-section">
+    <div class="container">
+        <div class="inner-container mx-auto">
+            <span class="d-block">OUR PARTNERS</span>
+            <h2>We don’t walk alone, Deliver X works thanks to our partners</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque ut quis.</p>
+        </div>
+
+        <div class="row text-center">
+            <div class="col">
+                <img src="assets/image-1-partners-delivery-template.svg" alt="svg">
+                <h3>Customers</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+            </div>
+            <div class="col">
+                <img src="assets/image-2-partners-delivery-template.svg" alt="svg">
+                <h3>Restaurants</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+            </div>
+            <div class="col">
+                <img src="assets/image-3-partners-delivery-template.svg" alt="svg">
+                <h3>Riders</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="news-section">
+    <div class="container">
+        <div class="inner-container mx-auto text-center">
+            <span class="d-block">Press & News</span>
+            <h2>See what the press says about Deliver X</h2>
+        </div>
+
+        <div class="row">
+            <div class="col col-6">
+                <a href="">
+                <div class="card">
+                    <img class="img-fluid" src="assets/image-1-logo-press-delivery-template.svg" alt="">
+                    <h3>Deliver X raises $26M in series B funding </h3>
+                    <div class="card-press-details">
+                        <div class="link-wrapper color-primary text-bold no-hover">
+                            <div class="link-text">Read more <i class="fa-solid fa-arrow-right"></i></div>
+                            
+                        </div>
+                        <span>January 22, 2023</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="col col-6">
+                <a href="">
+                <div class="card">
+                    <img class="img-fluid" src="assets/image-1-logo-press-delivery-template.svg" alt="">
+                    <h3>Deliver X raises $26M in series B funding </h3>
+                    
+                    <div class="card-press-details">
+                        <div class="link-wrapper color-primary text-bold no-hover">
+                            <div class="link-text">Read more <i class="fa-solid fa-arrow-right"></i></div>
+                            
+                        </div>
+                        <span>January 22, 2023</span>
+                    </div>
+                    
+                </div>
+                </a>
+            </div>
+            <div class="col col-6">
+                <a href="">
+                <div class="card">
+                    <img class="img-fluid" src="assets/image-1-logo-press-delivery-template.svg" alt="">
+                    <h3>Deliver X raises $26M in series B funding </h3>
+                    
+                    <div class="card-press-details">
+                        <div class="link-wrapper color-primary text-bold no-hover">
+                            <div class="link-text">Read more <i class="fa-solid fa-arrow-right"></i></div>
+                            
+                        </div>
+                        <span>January 22, 2023</span>
+                    </div>
+                    
+                </div>
+                </a>
+            </div>
+            <div class="col col-6">
+                <a href="">
+                <div class="card">
+                    <img class="img-fluid" src="assets/image-1-logo-press-delivery-template.svg" alt="">
+                    <h3>Deliver X raises $26M in series B funding </h3>
+                    <div class="card-press-details">
+                        <div class="link-wrapper color-primary text-bold no-hover">
+                            <div class="link-text">Read more <i class="fa-solid fa-arrow-right"></i></div>
+                            
+                        </div>
+                        <span>January 22, 2023</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+        <div class="row">
+            <div class="col">
+                <div class="inner-container">
+                    <img class="w-100 img-fluid" src="assets/logo.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor </p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="buttons-dl-app">
+                    <a href="" class="btn btn-ios"><i class="fa-brands fa-apple"></i>Download for iOS</a>
+                    <a href="" class="btn btn-android"><i class="fa-brands fa-android"></i>Download for Android</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-mid">
+
+        <div class="row layout">
+            <div class="inner-container">
+                <h4>Menu</h4>
+                <div class="nav-menu-list-main-wrapper">
+                    <ul role="list" class="nav-menu-list-wrapper">
+                        <li class="nav-menu-list-item">
+                            <a href="/home" class="text-200 menu-nav-link">Home</a>
+                        </li>
+                        <li class="nav-menu-list-item">
+                            <a href="/about" aria-current="page" class="text-200 menu-nav-link w--current">About</a>
+                        </li>
+                        <li class="nav-menu-list-item">
+                            <a href="/contact" class="text-200 menu-nav-link">Contact</a>
+                        </li>
+                        <li class="nav-menu-list-item">
+                            <a href="/blog" class="text-200 menu-nav-link">Blog</a>
+                        </li>
+                        <li class="nav-menu-list-item">
+                            <a href="https://delivertemplate.webflow.io/blog/4-tips-to-increase-your-side-income-in-food-delivery" class="text-200 menu-nav-link">Blog posts</a>
+                        </li>
+                    </ul>
+                    <ul role="list" class="nav-menu-list-wrapper last">
+                        <li class="nav-menu-list-item"><a href="/plans" class="text-200 menu-nav-link">Plans</a></li><li class="nav-menu-list-item"><a href="https://delivertemplate.webflow.io/product/deluxe" class="text-200 menu-nav-link">Plan single</a></li><li class="nav-menu-list-item"><a href="/download" class="text-200 menu-nav-link">Register</a></li></ul></div>
+            </div>
+            <div class="inner-container">
+                <h4>Utility pages</h4>
+                <ul role="list" class="nav-menu-list-wrapper last"><li class="nav-menu-list-item"><a href="/template-pages/start-here" class="text-200 menu-nav-link">Start here</a></li><li class="nav-menu-list-item"><a href="/template-pages/style-guide" class="text-200 menu-nav-link">Styleguide</a></li><li class="nav-menu-list-item"><a href="https://delivertemplate.webflow.io/401" class="text-200 menu-nav-link">Password protected</a></li><li class="nav-menu-list-item"><a href="https://delivertemplate.webflow.io/404" class="text-200 menu-nav-link">404 Not found</a></li><li class="nav-menu-list-item"><a href="/template-pages/licenses" class="text-200 menu-nav-link">Licenses</a></li><li class="nav-menu-list-item"><a href="/template-pages/changelog" class="text-200 menu-nav-link">Changelog</a></li><li class="nav-menu-list-item"><a href="https://brixtemplates.com/more-webflow-templates" class="text-200 menu-nav-link special">Browse More Templates</a></li></ul>
+            </div>
+
+            <div class="inner-container location">
+                <h4>Available in</h4>
+
+                <div class="row">
+                    <div class="col location">
+                        <img src="assets/icon-1-service-available-delivery-template.svg" alt="">
+                        <h4>San Francisco, CA</h4>
+                    </div>
+                    <div class="col location">
+                        <img src="assets/icon-2-service-available-delivery-template.svg" alt="">
+                        <h4>New York, NY</h4>
+                    </div>
+                    <div class="col location">
+                        <img src="assets/icon-3-service-available-delivery-template.svg" alt="">
+                        <h4>Los Angeles, CA</h4>
+                    </div>
+                    <div class="col location">
+                        <img src="assets/icon-4-service-available-delivery-template.svg" alt="">
+                        <h4>Seattle, WA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>Developed by: <span>Lester John Pulanco</span></p>
+    </div>
+  </div>
+</footer>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartSidebarLabel">Your Cart</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Your cart is empty.</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Configuration
+    const config = {
+        durations: {
+            fast: 0.2,
+            normal: 0.4,
+            slow: 0.6
+        },
+        easings: {
+            smooth: "power3.out",
+            bounce: "back.out(1.7)",
+            snap: "power2.inOut"
+        }
+    };
+
+    // Navbar initialization
+    function initNavbar() {
+        const elements = [
+            ".navbar",
+            ".navbar .navbar-brand",
+            ".navbar .navbar-nav",
+            ".navbar .right-buttons"
+        ];
+
+        gsap.from(elements, {
+            y: -100,
+            opacity: 0,
+            duration: 1,
+            ease: config.easings.smooth
+        });
+    }
+
+    // Hide/show navbar on scroll
+    function setupNavbarScroll() {
+        const navbar = document.querySelector(".navbar");
+        if (!navbar) return;
+
+        let lastScrollY = 0;
+        let ticking = false;
+
+        ScrollTrigger.create({
+            start: "top top",
+            end: "max",
+            onUpdate: (self) => {
+                const scrollY = self.scroll();
+                
+                if (!ticking) {
+                    window.requestAnimationFrame(() => {
+                        // Only trigger if scrolled more than 10px to avoid jitter
+                        if (Math.abs(scrollY - lastScrollY) > 10) {
+                            if (scrollY > lastScrollY && scrollY > 122) {
+                                // Scrolling down & past 100px
+                                gsap.to(navbar, {
+                                    y: -122,
+                                    duration: 0.3,
+                                    ease: "power2.inOut"
+                                });
+                            } else if (scrollY < lastScrollY) {
+                                // Scrolling up
+                                gsap.to(navbar, {
+                                    y: 0,
+                                    duration: 0.3,
+                                    ease: "power2.inOut"
+                                });
+                            }
+                            lastScrollY = scrollY;
+                        }
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }
+        });
+    }
+
+    // Hero section setup
+    function setupHeroSection() {
+        const tl = gsap.timeline({ 
+            defaults: { 
+                opacity: 0, 
+                ease: config.easings.smooth 
+            } 
+        });
+
+        tl.from(".title-heading", { y: -50, duration: 0.5 })
+          .from(".hero-section h1", { y: -50, duration: 0.5 }, "-=0.3")
+          .from(".sub-heading", { y: -50, duration: config.durations.normal }, "-=0.3")
+          .from(".hero-section .hero", { 
+              scale: 0.6,
+              opacity: 0, 
+              duration: config.durations.slow,
+              ease: config.easings.bounce 
+          })
+          .from(".hero-card", { y: 30, opacity: 0, duration: config.durations.normal }, "-=0.2")
+          .from(".hero-delivery", { y: 30, opacity: 0, duration: config.durations.normal }, "-=0.2");
+
+        return tl;
+    }
+
+    // Parallax effect for hero elements
+    function applyHeroParallax() {
+        const wrapper = document.querySelector(".hero-image");
+        if (!wrapper) return;
+
+        const elements = [
+            { selector: ".hero-card", distance: -40 },
+            { selector: ".hero-delivery", distance: 40 }
+        ];
+
+        elements.forEach(({ selector, distance }) => {
+            const el = document.querySelector(selector);
+            if (!el) return;
+
+            gsap.to(el, {
+                y: distance,
+                ease: "none",
+                scrollTrigger: {
+                    trigger: wrapper,
+                    start: "top bottom",
+                    end: "bottom top",
+                    scrub: 1.5,
+                    immediateRender: false,
+                    invalidateOnRefresh: true
+                }
+            });
+        });
+    }
+
+    // Stats counter animation
+    function animateStats() {
+        const stats = gsap.utils.toArray(".row.stats .col");
+        
+        stats.forEach((col, idx) => {
+            gsap.from(col, {
+                y: 30,
+                opacity: 0,
+                duration: config.durations.slow,
+                ease: config.easings.smooth,
+                delay: idx * 0.2,
+                scrollTrigger: {
+                    trigger: col,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    }
+
+    // About section images
+    function animateAboutImages() {
+        const images = gsap.utils.toArray(".about-section .img-content");
+        
+        images.forEach(img => {
+            gsap.from(img, {
+                scale: 0.6,
+                opacity: 0,
+                duration: config.durations.slow,
+                ease: config.easings.bounce,
+                scrollTrigger: {
+                    trigger: img,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    }
+
+    // Timeline cards animation
+    function animateTimeline() {
+        const cards = gsap.utils.toArray(".timeline-section .card");
+        
+        cards.forEach((card, idx) => {
+            gsap.from(card, {
+                scale: 0.6,
+                opacity: 0,
+                duration: config.durations.slow,
+                ease: config.easings.bounce,
+                delay: idx * 0.2,
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    }
+
+    // Partner icons animation
+    function animatePartners() {
+        const icons = gsap.utils.toArray(".partner-section img");
+        
+        icons.forEach((icon, idx) => {
+            gsap.from(icon, {
+                y: 40,
+                opacity: 0,
+                duration: config.durations.slow,
+                ease: config.easings.smooth,
+                delay: idx * 0.2,
+                scrollTrigger: {
+                    trigger: icon,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    }
+
+    // News cards animation
+    function animateNewsCards() {
+        const cards = gsap.utils.toArray(".news-section .card");
+        
+        gsap.from(cards, {
+            opacity: 0,
+            scale: 0.9,
+            duration: config.durations.slow,
+            ease: config.easings.smooth,
+            scrollTrigger: {
+                trigger: ".news-section .row",
+                start: "top 90%",
+                toggleActions: "play none none none"
+            }
+        });
+    }
+
+    // Footer animation
+    function animateFooter() {
+        const sections = [
+            { selector: ".footer-top", delay: 0 },
+            { selector: ".footer-mid", delay: 0.2 },
+            { selector: ".footer-bottom", delay: 0.4 }
+        ];
+
+        sections.forEach(({ selector, delay }) => {
+            const element = document.querySelector(selector);
+            if (!element) return;
+
+            gsap.from(element, {
+                y: 40,
+                opacity: 0,
+                duration: 0.8,
+                delay: delay,
+                ease: config.easings.smooth,
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+    }
+
+    // Dropdown menu handling
+    function setupDropdowns() {
+        const dropdowns = document.querySelectorAll(".dropdown");
+        
+        dropdowns.forEach(dropdown => {
+            const menu = dropdown.querySelector(".dropdown-menu");
+            const toggle = dropdown.querySelector(".dropdown-toggle");
+            const arrow = toggle?.querySelector(".fa-chevron-down");
+            
+            if (!menu || !toggle) return;
+
+            dropdown.addEventListener("show.bs.dropdown", () => {
+                gsap.killTweensOf(menu);
+                gsap.fromTo(menu, 
+                    { y: 10, opacity: 0 }, 
+                    { y: 0, opacity: 1, duration: config.durations.fast, ease: config.easings.smooth }
+                );
+                toggle.classList.add("active");
+                arrow?.classList.add("upside-down");
+            });
+
+            dropdown.addEventListener("hide.bs.dropdown", (e) => {
+                e.preventDefault();
+                gsap.killTweensOf(menu);
+                gsap.to(menu, {
+                    y: 10,
+                    opacity: 0,
+                    duration: config.durations.fast,
+                    ease: "power2.in",
+                    onComplete: () => {
+                        menu.classList.remove("show");
+                        dropdown.classList.remove("show");
+                        toggle.setAttribute("aria-expanded", "false");
+                    }
+                });
+                toggle.classList.remove("active");
+                arrow?.classList.remove("upside-down");
+            });
+        });
+    }
+
+    // Mobile menu controller
+    class MobileMenuController {
+        constructor() {
+            this.menu = document.getElementById("mobileMenu");
+            this.togglers = Array.from(document.querySelectorAll('.navbar-toggler'))
+                .filter(btn => btn.getAttribute('data-bs-target') === '#mobileMenu');
+            this.pagesMenu = document.getElementById('mobilePagesMenu');
+            
+            this.init();
+        }
+
+        init() {
+            if (!this.menu) return;
+            
+            this.setupMenuListeners();
+            this.setupPagesSubmenu();
+        }
+
+        setupMenuListeners() {
+            this.menu.addEventListener("show.bs.collapse", () => {
+                if (window.innerWidth < 992) this.disableTogglers();
+            });
+
+            this.menu.addEventListener("shown.bs.collapse", () => {
+                setTimeout(() => this.enableTogglers(), 30);
+            });
+
+            this.menu.addEventListener("hide.bs.collapse", () => {
+                if (window.innerWidth < 992) this.disableTogglers();
+            });
+
+            this.menu.addEventListener("hidden.bs.collapse", () => {
+                setTimeout(() => this.enableTogglers(), 30);
+            });
+        }
+
+        setupPagesSubmenu() {
+            if (!this.pagesMenu) return;
+
+            const toggle = document.querySelector('a[href="#mobilePagesMenu"]');
+            const arrow = toggle?.querySelector('.fa-chevron-down');
+
+            this.pagesMenu.addEventListener('show.bs.collapse', () => {
+                toggle?.classList.add('active');
+                arrow?.classList.add('upside-down');
+            });
+
+            this.pagesMenu.addEventListener('hide.bs.collapse', () => {
+                toggle?.classList.remove('active');
+                arrow?.classList.remove('upside-down');
+            });
+        }
+
+        disableTogglers() {
+            this.togglers.forEach(btn => btn.setAttribute('disabled', 'true'));
+        }
+
+        enableTogglers() {
+            this.togglers.forEach(btn => btn.removeAttribute('disabled'));
+        }
+    }
+
+    // Hamburger animation controller
+    class HamburgerAnimator {
+        constructor() {
+            this.toggler = document.querySelector(".navbar-toggler");
+            this.lines = document.querySelectorAll(".hamburger-icon span");
+            this.timeline = null;
+            
+            this.init();
+        }
+
+        init() {
+            if (!this.toggler || this.lines.length < 2) return;
+            
+            this.timeline = gsap.timeline({ paused: true, reversed: true });
+            this.timeline
+                .to(this.lines[0], { 
+                    y: 7, 
+                    rotate: 45, 
+                    duration: 0.3, 
+                    ease: config.easings.snap 
+                })
+                .to(this.lines[1], { 
+                    y: -7, 
+                    width: 30, 
+                    rotate: -45, 
+                    duration: 0.3, 
+                    ease: config.easings.snap 
+                }, "<");
+
+            this.toggler.addEventListener("click", () => this.toggle());
+        }
+
+        toggle() {
+            if (!this.timeline) return;
+            this.timeline.reversed() ? this.timeline.play() : this.timeline.reverse();
+        }
+
+        reset() {
+            if (this.timeline && !this.timeline.reversed()) {
+                this.timeline.reverse();
+            }
+        }
+    }
+
+    // Responsive handler
+    function handleResize(mobileMenu, hamburger) {
+        window.addEventListener("resize", () => {
+            if (window.innerWidth >= 992) {
+                const instance = bootstrap.Collapse.getInstance(mobileMenu);
+                if (instance && mobileMenu.classList.contains("show")) {
+                    instance.hide();
+                }
+                hamburger.reset();
+            }
+        });
+    }
+
+    // Initialize everything
+    function initialize() {
+        initNavbar();
+        setupNavbarScroll();
+        setupHeroSection();
+        applyHeroParallax();
+        animateStats();
+        animateAboutImages();
+        animateTimeline();
+        animatePartners();
+        animateNewsCards();
+        animateFooter();
+        setupDropdowns();
+
+        const mobileController = new MobileMenuController();
+        const hamburgerController = new HamburgerAnimator();
+        
+        const mobileMenu = document.getElementById("mobileMenu");
+        if (mobileMenu) {
+            handleResize(mobileMenu, hamburgerController);
+        }
+    }
+
+    initialize();
+});
+</script>
+
+
+
+</body>
+</html>
